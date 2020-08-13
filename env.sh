@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo setenforce 0
 sudo yum install -y php php-devel php-pear php-json php-zip make nginx unzip openssl-devel
 sudo pecl install mongodb
 echo "extension=mongodb.so" | sudo tee /etc/php.d/50-mongodb.ini
