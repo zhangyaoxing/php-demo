@@ -13,7 +13,7 @@ sudo mkdir -p /usr/share/nginx/html/php-demo
 sudo cp *.php /usr/share/nginx/html/php-demo/
 sudo cp -R vendor /usr/share/nginx/html/php-demo/
 cd /usr/share/nginx/html/php-demo/
-chmod +x *.php
+sudo chmod +x *.php
 
 sudo service nginx restart
 sudo service php-fpm restart
