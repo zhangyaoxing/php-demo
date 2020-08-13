@@ -10,8 +10,8 @@ php -r "unlink('composer-setup.php');"
 ./composer.phar require mongodb/mongodb
 
 sudo mkdir -p /usr/share/nginx/html/php-demo
-sudo mv *.php /usr/share/nginx/html/php-demo/
-sudo mv vendor /usr/share/nginx/html/php-demo/
+sudo cp *.php /usr/share/nginx/html/php-demo/
+sudo cp -R vendor /usr/share/nginx/html/php-demo/
 cd /usr/share/nginx/html/php-demo/
 chmod +x *.php
 
