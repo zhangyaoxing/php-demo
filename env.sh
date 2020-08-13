@@ -11,7 +11,7 @@ php -r "unlink('composer-setup.php');"
 composer require mongodb/mongodb
 cd ..
 sudo rm -rf /usr/share/nginx/html/php-demo
-cp -R php-demo /usr/share/nginx/html/
+sudo cp -R php-demo /usr/share/nginx/html/
 
 sudo service nginx restart
 sudo service php-fpm restart
