@@ -1,5 +1,5 @@
 <?php
-$connection = new MongoClient( "mongodb://test:M0ngoDB20@cluster0-shard-00-00.wy1z6.mongodb.net:27017,cluster0-shard-00-01.wy1z6.mongodb.net:27017,cluster0-shard-00-02.wy1z6.mongodb.net:27017/sample_analytics?ssl=true&replicaSet=atlas-vnfeuv-shard-0&authSource=admin" );
+$connection = new MongoClient('mongodb://test:M0ngoDB20@cluster1-shard-00-00.wy1z6.mongodb.net:27017,cluster1-shard-00-01.wy1z6.mongodb.net:27017,cluster1-shard-00-02.wy1z6.mongodb.net:27017/sample_analytics?ssl=true&replicaSet=atlas-fxhfef-shard-0&authSource=admin');
 $db = $connection->sample_analytics;
 $collection = $db->accounts;
 $cursor = $collection->aggregate(array(array('$sample' => array('size' => 1))), 
